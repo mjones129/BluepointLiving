@@ -1,0 +1,14 @@
+# Hugo default output directory
+/public/
+
+# Local resources and build caches
+/resources/_gen/
+/.hugo_build.cfg
+/hugo_stats.json
+
+# Hugo Modules
+/.getlibs/
+
+.DS_Store
+Thumbs.db
+.env
