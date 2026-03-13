@@ -1,3 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Project'
+
+[module]
+  replacements = ["gitea.home/matt/bp-hugo -> ./bp-hugo"]
+  [[module.imports]]
+    path = "gitea.home/matt/bp-hugo"
