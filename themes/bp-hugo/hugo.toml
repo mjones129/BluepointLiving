@@ -2,21 +2,64 @@ baseURL = 'https://example.org/'
 languageCode = 'en-US'
 title = 'My New Hugo Project'
 
-[menus]
-  [[menus.main]]
-    name = 'Home'
-    pageRef = '/'
+[[menus.main]]
+    name = "Home"
+    url = "/"
     weight = 10
 
-  [[menus.main]]
-    name = 'Posts'
-    pageRef = '/posts'
+[[menus.main]]
+    name = "Insulation"
+    url = "#"
+    identifier = "insulation" # Unique ID used by children
     weight = 20
 
-  [[menus.main]]
-    name = 'Tags'
-    pageRef = '/tags'
+[[menus.main]]
+    name = "Presentation"
+    url = "/denim-insulation-for-modular-walls-presentation/"
+    parent = "insulation" # Links it to the item above
+    weight = 2
+
+[[menus.main]]
+    name = "Acoustical Products"
+    url = "/acoustical-products/"
+    parent = "insulation"
+    weight = 1
+
+[[menus.main]]
+    name = "Battery Liners"
+    url = "/thermal-products/"
     weight = 30
+
+[[menus.main]]
+    name = "OEM"
+    url = "/oem-solutions/"
+    weight = 40
+
+[[menus.main]]
+    name = "Construction"
+    url = "/construction-products/"
+    weight = 50
+
+[[menus.main]]
+    name = "Smart Spaces"
+    url = "#"
+    weight = 60
+    identifier = "smart-spaces"
+
+[[menus.main]]
+    name = "Smart Gym Virtual Tour"
+    url = "/virtual-tour/"
+    parent = "smart-spaces"
+
+[[menus.main]]
+    name = "Healthcare Virtual Tour"
+    parent = "smart-spaces"
+    url = "/healthcare-tour/"
+  
+[[menus.main]]
+    name = "Chromotherapy"
+    parent = "smart-spaces"
+    url = "/chromotherapy-room-for-healthcare-environments/"
 
 [module]
   [module.hugoVersion]
