@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://bluepointliving.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = 'BluePoint Living'
 
 [module]
   replacements = ["gitea.home/matt/bp-hugo -> ./bp-hugo"]

@@ -5,6 +5,7 @@
 /resources/_gen/
 /.hugo_build.cfg
 /hugo_stats.json
+node_modules
 
 # Hugo Modules
 /.getlibs/
