@@ -1,15 +1,29 @@
 baseURL = 'https://bluepointliving.com/'
 languageCode = 'en-us'
 title = 'BluePoint Living'
+theme = 'bp-hugo'
 
 [module]
-  # Hugo looks inside the "themes" folder by default, 
-  # so we don't include "themes/" in the right-hand side.
   replacements = ["gitea.home/matt/bp-hugo -> bp-hugo"]
 
   [[module.imports]]
-    path = "gitea.home/matt/bp-hugo"
+    path = "bp-hugo"
+  
+  # 1. Map the theme's assets to the virtual 'assets' folder
+  [[module.mounts]]
+    source = "themes/bp-hugo/assets"
+    target = "assets"
+
+  # 2. Map the project's assets (to allow overrides)
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+
+  # 3. Map Bootstrap into the virtual 'assets/scss/bootstrap'
+  [[module.mounts]]
+    source = "node_modules/bootstrap/scss"
+    target = "assets/scss/bootstrap"
 
   [[module.mounts]]
-    source = "node_modules"
-    target = "assets"
+    source = "node_modules/bootstrap/dist/js"
+    target = "assets/js/bootstrap"
