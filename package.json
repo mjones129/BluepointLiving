@@ -1,9 +1,10 @@
 {
-  "scripts": {
-    "tailwind:build": "npx @tailwindcss/cli -i ./themes/bp-hugo/assets/css/main.css -o ./themes/bp-hugo/assets/css/tailwind.css"
-  },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^8.0.0",
     "@tailwindcss/cli": "^4.2.1",
+    "bootstrap": "^5.3.8",
+    "postcss": "^8.5.8",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.2.1"
   }
 }

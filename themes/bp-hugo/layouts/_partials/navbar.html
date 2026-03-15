@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg bg-body-primary">
+  <div class="container-fluid mx-auto">
+    <a class="navbar-brand" href="/">
+      <img src="images/BluePoint-logo.jpg" alt="BluePoint Logo" width="100px">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+      {{/* Dropdown Menu Item */}}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{ .Name }}
+        </a>
+        <ul class="dropdown-menu">
+          {{ range .Children }}
+            <li><a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </li>
+    {{ else }}
+      {{/* Standard Menu Item */}}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+      </ul>
+    </div>
+  </div>
+</nav>

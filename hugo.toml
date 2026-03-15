@@ -3,6 +3,13 @@ languageCode = 'en-us'
 title = 'BluePoint Living'
 
 [module]
-  replacements = ["gitea.home/matt/bp-hugo -> ./bp-hugo"]
+  # Hugo looks inside the "themes" folder by default, 
+  # so we don't include "themes/" in the right-hand side.
+  replacements = ["gitea.home/matt/bp-hugo -> bp-hugo"]
+
   [[module.imports]]
     path = "gitea.home/matt/bp-hugo"
+
+  [[module.mounts]]
+    source = "node_modules"
+    target = "assets"
