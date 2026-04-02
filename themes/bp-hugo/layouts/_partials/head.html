@@ -3,5 +3,5 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 
 <link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/main.css">
+{{ partial "head/css.html" . }}
 <script src="/js/bootstrap.bundle.min.js"></script>
