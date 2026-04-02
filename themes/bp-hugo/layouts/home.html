@@ -1,4 +1,21 @@
 {{ define "main" }}
+<section class="bpl-hero">
+  <h1>Welcome home.</h1>
+</section>
+<section class="d-flex justify-content-center align-items-center my-5">
+  <h3 class="mx-5">Our mission is to provide sustainable solutions for practical applications.</h3>
+</section>
+<section>
+  <h5 class="text-center">Companies who use our products:</h5>
+  <div class="logos">
+    <a href="https://dirtt.com">
+      <img src="images/DIRTT_scaled.webp" />
+    </a>
+    <a href="https://www.call2recycle.org">
+      <img src="images/Call2Recycle-Logo-Image.webp" />
+    </a>
+  </div>
+</section>
   {{ .Content }}
   {{ range site.RegularPages }}
     <section>

@@ -6,8 +6,24 @@ body {
 }
 
 header {
-  border-bottom: 1px solid #222;
   margin-bottom: 1rem;
+}
+
+.bpl-hero {
+  background-image: url('/images/bluepoint-living-header-1-1.jpg');
+  height: 630px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer {
