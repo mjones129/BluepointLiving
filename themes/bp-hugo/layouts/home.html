@@ -1,6 +1,6 @@
 {{ define "main" }}
 <section class="bpl-hero">
-  <h1>Welcome home.</h1>
+  <h1 class="drop-shadow">Welcome home.</h1>
 </section>
 <section class="d-flex justify-content-center align-items-center my-5">
   <h3 class="mx-5">Our mission is to provide sustainable solutions for practical applications.</h3>
@@ -28,11 +28,4 @@
     </a>
   </div>
 </section>
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
 {{ end }}
