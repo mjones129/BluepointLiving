@@ -7,6 +7,22 @@ body {
 
 header {
   margin-bottom: 1rem;
+  background-color: white;
+}
+
+header {
+  position: fixed;
+  width: 100vw;
+}
+
+nav {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-phone {
+  font-size: x-large;
+  color: #36b6e9
 }
 
 .bpl-hero {
