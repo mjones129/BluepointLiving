@@ -1,5 +1,5 @@
-# Hugo default output directory
-/public/
+# Hugo default output directory contents
+/public/*
 
 # Local resources and build caches
 /resources/_gen/
