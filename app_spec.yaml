@@ -2,11 +2,18 @@ name: bluepointliving
 region: nyc
 
 static_sites:
-  - name: bluepointliving
-    environment_slug: hugo
-    github:
-      repo: mjones129/BluepointLiving
-      branch: master
-      deploy_on_push: true
-    source_dir: .
-    output_dir: public/
+- name: bluepointliving
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: mjones129/BluepointLiving
+  build_command: npm install && hugo --minify --baseURL "${APP_URL}"
+  envs:
+  - key: HUGO_VERSION
+    scope: BUILD_COMMAND
+    value: 0.144.2
+  - key: HUGO_EXTENDED
+    scope: BUILD_COMMAND
+    value: "1"
+  output_dir: public/
+  source_dir: .
