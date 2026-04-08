@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <div class="gradient">
+      {{ .Content }}
+    <a class="btn btn-primary my-3" href="/files/MSDS-Material-Specification-Denim-Insulation-Quiet-Living-BluePoint-MSDS-SDS-Spec-Sheet-Bluepoint-Quiet-Living.pdf">Download MSDS</a>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="gallery-image img-fluid object-fit-cover rounded" src="/images/denim-pallets-ready-to-ship.webp" />
+            </div>
+        <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3">
+                <img class="gallery-image img-fluid object-fit-cover rounded" src="/images/Fire-and-Sound-Header-960x450-1.webp" />
+            </div>
+        </div>
+    </div>
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  </div>
+{{ end }}
