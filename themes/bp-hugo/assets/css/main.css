@@ -49,11 +49,6 @@ nav {
   margin-bottom: 10rem;
 }
 
-footer {
-  margin-top: 1rem;
-  position: relative;
-}
-
 a {
   color: #00e;
   text-decoration: none;
@@ -69,17 +64,11 @@ a {
     z-index: 0;
 }
 
-.footer-image {
-  filter: brightness(50%);
-}
-
 .footer-1 {
   padding: 2rem;
   background-color: #222;
   width: 100%;
   z-index: 9;
-  position: relative;
-  top: 5rem;
 }
 
 .footer-1 p {
@@ -107,6 +96,8 @@ p.text-light > a {
 .gallery-img {
   width: 100%;       /* Fills the column width */
   height: 250px;     /* Set your desired fixed height */
-  object-fit: cover; /* Crops the image to fit the container without distortion */
-  border-radius: 8px; /* Optional: adds a modern touch */
+}
+
+.container .row .col-md-6 img {
+  margin-bottom: 1rem;
 }
