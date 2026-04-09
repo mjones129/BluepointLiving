@@ -15,7 +15,7 @@ title = 'My New Hugo Project'
 
 [[menus.main]]
     name = "Presentation"
-    url = "/denim-insulation-for-modular-walls-presentation/"
+    url = "/denim-presentation/"
     parent = "insulation" # Links it to the item above
     weight = 2
 

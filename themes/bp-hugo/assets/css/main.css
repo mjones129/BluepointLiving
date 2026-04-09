@@ -3,6 +3,9 @@ body {
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -64,6 +67,10 @@ a {
     z-index: 0;
 }
 
+footer {
+  margin-top: auto;
+}
+
 .footer-1 {
   padding: 2rem;
   background-color: #222;
@@ -100,4 +107,8 @@ p.text-light > a {
 
 .container .row .col-md-6 img {
   margin-bottom: 1rem;
+}
+
+.bold {
+  font-weight: bolder;
 }
