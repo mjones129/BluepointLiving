@@ -1,3 +1,7 @@
+:root {
+  --section-height: 569px;
+  --icon-size: 55px;
+}
 
 body {
   color: #222;
@@ -101,8 +105,8 @@ p.text-light > a {
 }
 
 .gallery-img {
-  width: 100%;       /* Fills the column width */
-  height: 250px;     /* Set your desired fixed height */
+  width: 100%;
+  height: 250px;
 }
 
 .container .row .col-md-6 img {
@@ -121,25 +125,25 @@ p.text-light > a {
 .gym-tour {
 	background-image: url(/images/GymLanding1_0001.webp);
   background-position: center;
-	min-height: 569px;
+	min-height: var(--section-height);
 }
 
 .gym-media {
   background-image: url(/images/DIRTWALL4_0001.webp);
   background-position: left;
-  min-height: 569px;
+  min-height: var(--section-height);
 }
 
 .gym-room {
   background-image: url(/images/Wide3_0001.webp);
   background-position: center;
-  min-height: 569px;
+  min-height: var(--section-height);
 }
 
 .gym-audio {
   background-image: url(/images/ModernAudio.webp);
   background-position: center;
-  min-height: 569px;
+  min-height: var(--section-height);
 }
 .shadow-box {
   background-color: rgba(0, 0, 0, 0.5);
@@ -150,4 +154,22 @@ p.text-light > a {
 .shadow-box p {
   color: white;
   font-size: larger;
+}
+
+.construction-bg {
+  background-image: linear-gradient(180deg,rgba(5,1,1,0.99) 0%,rgba(0,0,0,0.81) 100%),url(/images/constructionbg.webp) !important;
+}
+
+.construction-bg div h1 {
+  color: white;
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.construction-bg div p {
+  color: white;
+}
+
+.icon {
+  max-height: var(--icon-size);
 }
