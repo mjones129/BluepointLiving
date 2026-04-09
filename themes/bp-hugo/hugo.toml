@@ -47,6 +47,11 @@ title = 'My New Hugo Project'
     identifier = "smart-spaces"
 
 [[menus.main]]
+    name = "Gym"
+    url = "/smart-spaces/gym/"
+    parent = "smart-spaces"
+
+[[menus.main]]
     name = "Smart Gym Virtual Tour"
     url = "/virtual-tour/"
     parent = "smart-spaces"

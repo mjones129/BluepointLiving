@@ -112,3 +112,42 @@ p.text-light > a {
 .bold {
   font-weight: bolder;
 }
+
+.gym-hero {
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.74) 0%,#020000 100%),url(/images/smart-gym1.webp) !important;
+	background-position: center;
+}
+
+.gym-tour {
+	background-image: url(/images/GymLanding1_0001.webp);
+  background-position: center;
+	min-height: 569px;
+}
+
+.gym-media {
+  background-image: url(/images/DIRTWALL4_0001.webp);
+  background-position: left;
+  min-height: 569px;
+}
+
+.gym-room {
+  background-image: url(/images/Wide3_0001.webp);
+  background-position: center;
+  min-height: 569px;
+}
+
+.gym-audio {
+  background-image: url(/images/ModernAudio.webp);
+  background-position: center;
+  min-height: 569px;
+}
+.shadow-box {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: fit-content;
+}
+
+.shadow-box p {
+  color: white;
+  font-size: larger;
+}
