@@ -2,19 +2,3 @@ baseURL = 'https://bluepointliving.com/'
 languageCode = 'en-us'
 title = 'BluePoint Living'
 theme = 'bp-hugo'
-
-[module]
-  replacements = ["gitea.home/matt/bp-hugo -> bp-hugo"]
-
-  [[module.imports]]
-    path = "bp-hugo"
-  
-  # 1. Map the theme's assets to the virtual 'assets' folder
-  [[module.mounts]]
-    source = "themes/bp-hugo/assets"
-    target = "assets"
-
-  # 2. Map the project's assets (to allow overrides)
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"

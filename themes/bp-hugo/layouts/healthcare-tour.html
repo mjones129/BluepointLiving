@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <div class="container text-center">
+        {{ .Content }}
+        <div id="panorama"></div>
+    </div>
+
+<script>
+    pannellum.viewer('panorama', {
+        "type": "equirectangular",
+        "panorama": "/images/Healthcare360_V2_0001.webp"
+    });
+</script>
+{{ end }}
