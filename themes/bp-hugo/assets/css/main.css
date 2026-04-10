@@ -173,3 +173,8 @@ p.text-light > a {
 .icon {
   max-height: var(--icon-size);
 }
+
+.oem-main {
+	background-position: center bottom 0px;
+	background-image: linear-gradient(180deg,#ffffff 0%,rgba(22,22,22,0.85) 99%),url(/images/oem_bg.webp) !important;
+}
