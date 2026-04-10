@@ -53,7 +53,7 @@ title = 'My New Hugo Project'
 
 [[menus.main]]
     name = "Smart Gym Virtual Tour"
-    url = "/virtual-tour/"
+    url = "/smart-spaces/gym-tour/"
     parent = "smart-spaces"
 
 [[menus.main]]
