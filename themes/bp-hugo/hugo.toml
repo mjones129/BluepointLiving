@@ -27,7 +27,7 @@ title = 'My New Hugo Project'
 
 [[menus.main]]
     name = "Battery Liners"
-    url = "/thermal-products/"
+    url = "/battery-liners/"
     weight = 30
 
 [[menus.main]]
@@ -59,7 +59,7 @@ title = 'My New Hugo Project'
 [[menus.main]]
     name = "Healthcare Virtual Tour"
     parent = "smart-spaces"
-    url = "/healthcare-tour/"
+    url = "smart-spaces/healthcare-tour/"
   
 [[menus.main]]
     name = "Chromotherapy"
