@@ -59,12 +59,12 @@ title = 'My New Hugo Project'
 [[menus.main]]
     name = "Healthcare Virtual Tour"
     parent = "smart-spaces"
-    url = "smart-spaces/healthcare-tour/"
+    url = "/smart-spaces/healthcare-tour/"
   
 [[menus.main]]
     name = "Chromotherapy"
     parent = "smart-spaces"
-    url = "/chromotherapy-room-for-healthcare-environments/"
+    url = "/smart-spaces/chromotherapy"
 
 [module]
   [module.hugoVersion]

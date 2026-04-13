@@ -1,8 +1,10 @@
 {{ define "main" }}
     <div class="container">
         {{ .Content }}
-        <video class="w-100" controls>
-            <source type="video/mp4" src="https://f002.backblazeb2.com/file/edgesite/videos/BluePoint-Smart-Living-Healthcare-Environment.mp4" >
-        </video>
+        <div class="ratio ratio-16x9">
+            <video controls>
+                <source type="video/mp4" src="https://f002.backblazeb2.com/file/edgesite/videos/BluePoint-Smart-Living-Healthcare-Environment.mp4" >
+            </video>
+        </div>
     </div>
 {{ end }}

@@ -28,7 +28,8 @@ nav {
 
 .nav-phone {
   font-size: x-large;
-  color: #36b6e9
+  color: #36b6e9;
+  min-width: 201px;
 }
 
 .bpl-hero {
