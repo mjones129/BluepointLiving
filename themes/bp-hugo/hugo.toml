@@ -66,6 +66,10 @@ title = 'My New Hugo Project'
     parent = "smart-spaces"
     url = "/smart-spaces/chromotherapy"
 
+[[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+
 [module]
   [module.hugoVersion]
     extended = false
