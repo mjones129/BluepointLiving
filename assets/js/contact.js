@@ -1,28 +1,23 @@
 document.addEventListener('DOMContentLoaded', function () {
-  if (args.honeypot && args.honeypot.length > 0) {
-    console.log("Bot detected via honeypot.");
-    return { statusCode: 200, body: { message: "Message sent!" } };
-  }
-
   const form = document.getElementById('contact-form');
   const msgDiv = document.getElementById('response-msg');
   const btn = document.getElementById('submit-btn');
 
-  // Safety check to ensure the form actually exists on this page
   if (!form) return;
 
   form.onsubmit = async (e) => {
     e.preventDefault();
 
-    // UI Feedback
     btn.disabled = true;
     btn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
     msgDiv.classList.add('d-none');
 
+    // Get the values, including the honeypot
     const payload = {
       name: document.getElementById('name').value,
       email: document.getElementById('email').value,
-      message: document.getElementById('message').value
+      message: document.getElementById('message').value,
+      honeypot: document.getElementById('honeypot').value // Send this to the server
     };
 
     try {
@@ -31,15 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-
+      
       const result = await response.json();
-
       msgDiv.classList.remove('d-none', 'alert-danger', 'alert-success');
 
       if (response.ok) {
         msgDiv.classList.add('alert-success');
         msgDiv.innerText = "Success! Your message has been sent.";
-        form.reset(); // This clears the inputs ONLY on success
+        form.reset();
       } else {
         throw new Error(result.error || "Submission failed");
       }
